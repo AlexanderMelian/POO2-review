@@ -34,9 +34,6 @@ public class CombineTwoArrays {
 			}
 			
 		}
-		for (int x = 0; x < i; x++) {
-            System.out.print(total[x] + " ");
-        }
 		return total;
 	}
 	
