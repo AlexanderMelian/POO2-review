@@ -20,6 +20,10 @@ public class Main {
     	Double[][] MatrixReal = {{5D,2D,3D},{1D,5D,3D}, {1D,2D,5D}};
     	System.out.println(new MatrixRealNumbers(MatrixReal).compare());*/
     	//Integer[] sing = {230,555,1021,1,2,1,2,1000,65530,70000,80000,302,401,110,0,4,1,0,1,10000};
+    	
+    	Hotel x = new Hotel(5);
+    	x.ocuparHabitacion(5, 4);
+    	
     }
 }
 
