@@ -24,16 +24,18 @@ public class Hotel {
 	
 	public void ocuparHabitacion(int mayores, int menores) {
 		if((mayores+menores)>8) {
-			System.out.print("Supera las 3 personas");
+			System.out.print("Supera las 8 personas");
 		}else {
 			int rL = this.room.length;
 			for(int i = 0; i < rL; i++) {
 				if(this.rOccuped[i]) {
-					break;
+					continue;
 				}else {
 					this.room[i] = mayores + menores;
 					this.pYoung[i] = menores;
 					this.pOld[i] = mayores;
+					this.rOccuped[i] = true;
+					break;
 				}
 			}
 		}
@@ -45,6 +47,9 @@ public class Hotel {
 	}
 	
 	public void imprimirAlgo() {
-		System.out.print("asdasdas");
+		int rL = this.room.length;
+		for(int i = 0; i < rL; i++) {
+			System.out.println(this.room[i]);
+		}
 	}
 }

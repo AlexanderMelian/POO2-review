@@ -22,7 +22,9 @@ public class Main {
     	//Integer[] sing = {230,555,1021,1,2,1,2,1000,65530,70000,80000,302,401,110,0,4,1,0,1,10000};
     	
     	Hotel x = new Hotel(5);
-    	x.ocuparHabitacion(5, 4);
+    	x.ocuparHabitacion(3, 4);
+    	x.ocuparHabitacion(3, 2);
+    	x.imprimirAlgo();
     	
     }
 }
